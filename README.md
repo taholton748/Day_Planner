@@ -18,6 +18,7 @@ https://taholton748.github.io/Day_Planner/
 - CSS
 - JavaScript
 - BootStrap
+- jQuery
 
 ## Contact
 
