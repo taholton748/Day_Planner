@@ -10,3 +10,15 @@ $("#currentDay").html(todayDate);
 // THEN the text for that event is saved in local storage
 // WHEN I refresh the page
 // THEN the saved events persist
+// Display today's day and date
+
+$(document).ready(function () {
+  // saveBtn click listener
+  $(".saveBtn").on("click", function () {
+    var text = $(this).siblings(".description").val();
+    var time = $(this).parent().attr("id");
+
+    // Save input in local storage
+    localStorage.setItem(time, text);
+  });
+});
